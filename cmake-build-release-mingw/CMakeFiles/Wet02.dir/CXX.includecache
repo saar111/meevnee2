@@ -1,0 +1,82 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedNode.cpp
+AVLRankedNode.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedNode.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedNode.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedTree.cpp
+AVLRankedTree.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedTree.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedTree.h
+iostream
+-
+AVLRankedNode.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedNode.h
+cassert
+-
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/Agency.cpp
+Agency.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/Agency.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/Agency.h
+AVLRankedTree.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedTree.h
+TypeId.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/TypeId.h
+exception
+-
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DSW.cpp
+exception
+-
+DSW.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DSW.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DSW.h
+library2.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/library2.h
+UnionFind.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/UnionFind.h
+Agency.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/Agency.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DynamicArray.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/TypeId.cpp
+TypeId.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/TypeId.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/TypeId.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/UnionFind.cpp
+UnionFind.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/UnionFind.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/UnionFind.h
+DynamicArray.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DynamicArray.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/library2.h
+
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/main.cpp
+iostream
+-
+iostream
+-
+UnionFind.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/UnionFind.h
+AVLRankedTree.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/AVLRankedTree.h
+DSW.h
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/DSW.h
+

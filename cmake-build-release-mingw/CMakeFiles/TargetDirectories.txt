@@ -1,0 +1,3 @@
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-release-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-release-mingw/CMakeFiles/Wet02.dir
+C:/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-release-mingw/CMakeFiles/edit_cache.dir
