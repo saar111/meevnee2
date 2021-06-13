@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02
+# Install script for directory: /mnt/c/Users/Ben/Desktop/תרגיל בית 2/meevnee2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Ben/Desktop/תרגיל בית 2/meevnee2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -7,6 +7,7 @@ private:
     int id;
 public:
     explicit TypeId(int id);
+    TypeId(int id, int sales_count);
     void Sell(int sales_count);
     int GetId() const;
 

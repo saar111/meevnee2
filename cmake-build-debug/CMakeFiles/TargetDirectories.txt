@@ -1,3 +1,3 @@
-/mnt/c/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-debug/CMakeFiles/Wet02.dir
-/mnt/c/Users/saar_/OneDrive/Documents/Technion/Semester 3/Mivnei/Wet02/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Ben/Desktop/תרגיל בית 2/meevnee2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Ben/Desktop/תרגיל בית 2/meevnee2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Ben/Desktop/תרגיל בית 2/meevnee2/cmake-build-debug/CMakeFiles/Wet02.dir

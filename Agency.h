@@ -4,6 +4,7 @@
 #include "AVLRankedTree.h"
 #include "TypeId.h"
 #include <exception>
+#include "TypeIdById.h"
 
 class IthSellerDoesNotExist : public std::exception {
 };
@@ -12,6 +13,7 @@ class Agency {
 private:
     int id;
     AVLRankedTree<TypeId> sales;
+    AVLRankedTree<TypeIdById> car_types; //TODO::edited by ben: the second sorted by car_types AVL tree
 public:
     explicit Agency(int id);
     ~Agency();
