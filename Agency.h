@@ -19,7 +19,7 @@ public:
     ~Agency();
     void SellCar(int type_id, int sales_count);
     int GetIthSellerId(int i);
-    int GetWorstSellerId();
+//    int GetWorstSellerId();
 
     static void unite_agencies(Agency *bigger_agency, Agency *smaller_agency);
 };

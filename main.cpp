@@ -4,6 +4,7 @@
 #include "UnionFind.h"
 #include "AVLRankedTree.h"
 #include "DSW.h"
+#include "library2.h"
 
 void unite_int(int *a, int *b) {
     std::cout << "INSIDE" << std::endl;

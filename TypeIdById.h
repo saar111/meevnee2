@@ -8,9 +8,11 @@ private:
     int id;
 public:
     explicit TypeIdById(int id);
+    TypeIdById(const TypeIdById&) = default;
     void Sell(int sales_count);
     int GetId() const;
     int getSalesCount() const;
+
 
     bool operator<(const TypeIdById &rhs) const;
     bool operator==(const TypeIdById &rhs) const;

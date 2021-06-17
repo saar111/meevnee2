@@ -38,6 +38,7 @@ private:
     void UpdateChildren(AVLRankedNode<T> *node);
     void UpdateInformation(AVLRankedNode<T> *node);
     void InsertNode(AVLRankedNode<T> *new_node, AVLRankedNode<T> *current);
+    void UpdateEverything(AVLRankedNode<T>* current);
 
     void RemoveLeaf(AVLRankedNode<T> *target_node);
     void RemoveSingleChildNode(AVLRankedNode<T> *target_node);
@@ -136,6 +137,7 @@ public:
     void ClearTree();
     AVLRankedNode<T> *Select(int rank);
 
+
     TreeIterator BeginFromSmallest() {
         return AVLRankedTree::TreeIterator(GetSmallestNode());
     }
@@ -198,6 +200,7 @@ AVLRankedTree<T> &AVLRankedTree<T>::operator=(const AVLRankedTree<T> &rhs) {
     this->root = node_to_insert;
     if (rhs.root->GetLeft() == nullptr && rhs.root->GetRight() == nullptr) {
         UpdateEdgeNodes();
+        UpdateEverything(root);
         return *this;
     }
     if (rhs.root->GetLeft() != nullptr) {
@@ -207,6 +210,7 @@ AVLRankedTree<T> &AVLRankedTree<T>::operator=(const AVLRankedTree<T> &rhs) {
         InsertionToCopyTree(rhs.root->GetRight(), this->root, 'r');
     }
 
+    UpdateEverything(root);
     UpdateEdgeNodes();
     return *this;
 }
@@ -691,6 +695,17 @@ int AVLRankedTree<T>::GetTreeSize() {
     }
 
     return root->GetChildren();
+}
+
+template<class T>
+void AVLRankedTree<T>::UpdateEverything(AVLRankedNode<T> *current) {
+    if(current == nullptr) {
+        return;
+    }
+
+    UpdateEverything(current->GetLeft());
+    UpdateEverything(current->GetRight());
+    UpdateInformation(current);
 }
 
 

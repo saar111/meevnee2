@@ -41,7 +41,7 @@ AVLRankedTree<T> *unite_trees(AVLRankedTree<T> &tree1, AVLRankedTree<T> &tree2) 
             sorted_united_ts[current_index] = *iterator1;
             ++iterator1;
         } else {
-            sorted_united_ts[current_index] = *iterator2;
+            sorted_united_ts[current_index] = new T(*(*iterator2));
             ++iterator2;
         }
         current_index++;
@@ -54,12 +54,14 @@ AVLRankedTree<T> *unite_trees(AVLRankedTree<T> &tree1, AVLRankedTree<T> &tree2) 
     }
 
     while (*iterator2 != nullptr) {
-        sorted_united_ts[current_index] = *iterator2;
+        sorted_united_ts[current_index] = new T(*(*iterator2));
         ++iterator2;
         current_index++;
     }
     try {
-        return new AVLRankedTree<T>(sorted_united_ts, united_tree_size);
+        auto new_tree = new AVLRankedTree<T>(sorted_united_ts, united_tree_size);
+        delete[] sorted_united_ts;
+        return new_tree;
     } catch (std::bad_alloc &err) {
         delete[] sorted_united_ts;
         throw err;
@@ -75,6 +77,9 @@ void Agency::unite_agencies(Agency *bigger_agency, Agency *smaller_agency) {
 
         bigger_agency->sales = *new_sales_tree;
         bigger_agency->car_types = *new_ids_tree;
+
+        delete new_sales_tree;
+        delete new_ids_tree;
     } catch (std::bad_alloc &err) {
         delete new_sales_tree;
         delete new_ids_tree;
@@ -94,10 +99,18 @@ Agency::~Agency() {
 }
 
 int Agency::GetIthSellerId(int i) {
-    return sales.Select(sales.GetTreeSize() - i + 1)->GetData()->GetId();
+    AVLRankedNode<TypeId> *target_node = sales.Select(i + 1);
+    if (!target_node) {
+        throw IthSellerDoesNotExist();
+    }
+    return target_node->GetData()->GetId();
 }
 
-int Agency::GetWorstSellerId() {
-    return sales.GetSmallestNode()->GetData()->GetId();
-}
+/*int Agency::GetWorstSellerId() {
+    AVLRankedNode<TypeId> *target_node = sales.GetSmallestNode();
+    if (!target_node) {
+        throw IthSellerDoesNotExist();
+    }
+    return target_node->GetData()->GetId();
+}*/
 

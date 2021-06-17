@@ -7,7 +7,7 @@ DSW::DSW() : agencies(UnionFind<Agency>()), agencies_count(0) {}
 StatusType DSW::AddAgency() {
     Agency *new_agency = nullptr;
     try {
-        new_agency = new Agency(agencies_count); // TODO: delete somewhere
+        new_agency = new Agency(agencies_count);
         agencies.MakeSet(new_agency);
     } catch (std::bad_alloc &) {
         delete new_agency;
@@ -19,7 +19,7 @@ StatusType DSW::AddAgency() {
 }
 
 StatusType DSW::SellCar(int agency_id, int type_id, int k) {
-    if (k <= 0 || agency_id < 0) { // TODO: add to library2.cpp relevant INVALID_INPUT part
+    if (k <= 0 || agency_id < 0) {
         return INVALID_INPUT;
     }
 
@@ -50,7 +50,7 @@ StatusType DSW::UniteAgencies(int agency_id1, int agency_id2) {
 }
 
 StatusType DSW::GetIthSoldType(int agency_id, int i, int *res) {
-    if (agency_id < 0 || res == NULL || i < 0) { // TODO: add to library2.cpp relevant INVALID_INPUT part
+    if (agency_id < 0 || res == NULL || i < 0) {
         return INVALID_INPUT;
     }
 
@@ -60,11 +60,7 @@ StatusType DSW::GetIthSoldType(int agency_id, int i, int *res) {
     }
 
     try {
-        if (i == 0) {
-            *res = target_agency_set->GetData()->GetWorstSellerId();
-        } else {
-            *res = target_agency_set->GetData()->GetIthSellerId(i);
-        }
+        *res = target_agency_set->GetData()->GetIthSellerId(i);
     } catch (IthSellerDoesNotExist &) {
         return FAILURE;
     }

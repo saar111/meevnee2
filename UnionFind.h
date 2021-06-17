@@ -128,7 +128,9 @@ UnionFind<T>::~UnionFind() {
 template<class T>
 void UnionFind<T>::DeleteInnerData() {
     for (int i = 0; i < nodes.elements_count; i++) {
-        delete nodes.pointers[i]->GetData();
+//        if(Find(i) == nodes.pointers[i]) i{
+            delete nodes.pointers[i]->GetData();
+//        }
     }
 
 }
